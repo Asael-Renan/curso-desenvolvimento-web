@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Página inicial</title>
+	<link rel="stylesheet" type="text/css" href="principal.css">
+    <link rel="stylesheet" href="Bootstrap/paginas/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/paginas/fontawesome/css/all.css">
+    
+</head>
+<body>
+	
+	<header> <!-- Inicio cabecalho -->
+        <nav class="navbar navbar-dark navbar-expand-md bg-primary">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1 class="text-light display-4 text-md-center" id="texto-titulo">Selecione um projeto</h1>
+                </div>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#hamburger">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="hamburger">
+                    <form class="ml-auto form-group my-auto"> <!--Formulario de pesquisa-->
+                        <div class="input-group input-group-lg">
+                            
+                            <div class="input-group-prepend">
+                                <label for="caixa-de-pesquisa" class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            </div>
+
+                            <input id="caixa-de-pesquisa" type="text" class="form-control form-control-sm" placeholder="Pesquise por um projeto">
+                        
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </nav>
+    </header> <!-- Fim cabecalho -->
+
+    <section class="mt-5">
+        <div class="container text-light">
+            <div class="row justify-content-around text-center">
+
+               <div class="col-md-3 img pt-4">
+                    <a href="html/html.html">
+                        <img src="imagens-de-fundo/html.png" class="img-fluid">
+                        <span class="titulo-leitor-tela">HTML 5</span>
+                    </a>
+               </div>
+
+               <div class="col-md-3 img pt-4">
+                    <a href="css/css.html">
+                        <img src="imagens-de-fundo/css.png" class="img-fluid">
+                        <span class="titulo-leitor-tela">CSS 3</span>
+                    </a>
+               </div>
+
+               <div class="col-md-3 img">
+                    <a href="css avançado/css-avancado.html">
+                        <img src="imagens-de-fundo/css.png" class="img-fluid">
+                        <span class="titulo-leitor-tela">CSS 3 </span>
+                        <h1>Avançado</h1>
+                    </a>
+               </div>
+
+               <div class="col-md-3 img pt-4">
+                    <a href="Bootstrap/bootstrap.html">
+                        <img src="imagens-de-fundo/bootstrap.png" class="img-fluid" style="height: 200px;">
+                        <span class="titulo-leitor-tela">Bootstrap 4</span>
+                    </a>
+                </div>
+
+               <div class="col-md-3 img pt-2" style="height: 270px;">
+                    <a href="js/js.html">
+                        <img src="imagens-de-fundo/js.png" class="img-fluid">
+                        <span class="titulo-leitor-tela">Java script</span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 img pt-2" style="height: 270px;">
+                    <a href="ec/ecma.html">
+                        <img src="imagens-de-fundo/es6.jpg" style="border-radius: 50px;" class="img-fluid">
+                        <span class="titulo-leitor-tela">Java script</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="Bootstrap/paginas/Bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
