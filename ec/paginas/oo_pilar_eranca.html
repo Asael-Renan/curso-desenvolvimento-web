@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+
+        class Animal {
+                constructor() {
+                    this.cor = ''
+                    this.tamanho = null
+                }
+
+                dormir () {
+                    console.log('dormir')
+                }
+        }
+
+        class Cachorro extends Animal{
+            constructor() {
+                super()
+                this.orelhas = 'grandes e caidas'
+            }
+
+            comer() {
+                console.log('comer')
+            }
+
+            rosnar(){
+                console.log('rosnar')
+            }
+        }
+
+        class Passaro extends Animal{
+            constructor() {
+                super()
+                this.bico = 'curto'
+            }
+
+            voar () {
+                console.log('voar')
+            }
+        }
+
+        class Papagaio extends Passaro {
+            constructor() {
+                super()
+                this.fala = true
+            }
+
+            falar() {
+                console.log('falar')
+            }
+        }
+
+        var cachorro  = new Cachorro
+        var passaro  = new Passaro
+        var papagaio = new Papagaio
+
+        cachorro.dormir()
+        papagaio.voar()
+
+        console.log(cachorro)
+        console.log(passaro)
+        console.log(papagaio)
+    </script>
+</head>
+
+<body>
+    <h2><a href="../ecma.html">Voltar</a></h2>
+</body>
+
+</html>

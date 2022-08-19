@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EC</title>
+
+        <script>
+            
+            //modelo do objeto
+            class ContaBancaria {
+                constructor() {
+                    this.agencia = 175
+                    this.numeroConta = 8351125
+                    this.saldo = 50 
+                    this.limite = 450
+                }
+
+                depositar(valorDeposito) {
+                    this.saldo += valorDeposito
+                }
+
+                sacar(valorSaque) {
+                    this.saldo -= valorSaque
+                }
+
+                consultarSaldo() {
+                    return this.saldo
+                }
+            }
+
+            let x = new ContaBancaria()
+            let y = new ContaBancaria()
+
+            x.depositar(20)
+            console.log(x.consultarSaldo())
+
+        </script>
+
+	</head>
+	<body>
+        <h2><a href="../ecma.html">Voltar</a></h2>
+	</body>
+</html>

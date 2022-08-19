@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EC</title>
+
+        <script>
+            
+            class Cadeira {
+                constructor(qtde_pernas, giratoria, cor) {
+                    this.qtde_pernas = qtde_pernas
+                    this.giratoria = giratoria
+                    this.cor = cor
+                }
+
+                girarCadeira() {
+                    if (this.giratoria === true){
+                        console.log('é giratoria')
+                    } else {
+                        console.log('Não é giratoria')
+                    }
+                }
+            }
+
+            let cadeira1 = new Cadeira(1, true, 'red')
+            let cadeira2 = new Cadeira(3, false, 'blue')
+
+            //console.log(cadeira1, cadeira2)
+
+            cadeira1.girarCadeira()
+            cadeira2.girarCadeira()
+
+        </script>
+
+	</head>
+	<body>
+        <h2><a href="../ecma.html">Voltar</a></h2>
+	</body>
+</html>

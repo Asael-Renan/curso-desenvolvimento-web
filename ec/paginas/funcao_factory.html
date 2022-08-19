@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        
+        let Bicicleta1 = {
+            cor: 'branca',
+            marcha: 'unica',
+            aro: 12,
+
+            pedalar(){
+                console.log('pedalar')
+            }
+        }
+
+        let Bicicleta2 = {
+            cor: 'vermelha',
+            marcha: 'duas',
+            aro: 3,
+
+            pedalar(){
+                console.log('pedalar')
+            }
+        }
+
+        //----------------------
+
+        let factoryBicicleta = (cor = 'azul', marcha = 'unica', aro = 12) => {
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar () {
+                    console.log('Pedalar')
+                }
+            }
+        }
+
+        let Bicicleta3 = factoryBicicleta('verde')
+
+        console.log(Bicicleta3.cor)
+        Bicicleta3.pedalar()
+
+    </script>
+</head>
+
+<body>
+    <h2><a href="../ecma.html">Voltar</a></h2>
+</body>
+
+</html>

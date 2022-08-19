@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'assesso a internet',
+            status () {
+                console.log('Ativo')
+            }
+        }
+
+        assinatura.status()
+
+        console.log(assinatura.descricao)
+
+        let y = assinatura
+
+        //os valores das duas variaveis sao alterados
+        y.descricao = 'teste'
+        console.log(y.descricao)
+        console.log(assinatura.descricao)
+
+    </script>
+</head>
+
+<body>
+    <h2><a href="../ecma.html">Voltar</a></h2>
+</body>
+
+</html>
