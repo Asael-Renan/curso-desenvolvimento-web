@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>efeito Gradiente</title>
+        <style>
+
+            #voltar a {
+                text-decoration: none;
+                padding: 10px;
+                color: aliceblue;
+                opacity: 0.8;
+                text-shadow: 5px 5px 2px rgb(0, 0, 0);
+            }
+
+            #box {
+                width: 500px;
+                height: 500px;
+                /*background: linear-gradient(to right, red, blue);*/
+                background: linear-gradient(50deg , red, blue, yellow, orange);
+                margin: 10px;
+                float: left;
+                box-shadow: 10px 10px 2px black;
+            }
+
+            #box2 {
+                width: 500px;
+                height: 500px;
+                background: radial-gradient(red, green, blue, yellow);
+                float: left;
+                margin: 10px;
+                box-shadow: 10px 10px 12px black;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h2 id="voltar"><a href="../css-avancado.html"><span style="background: linear-gradient(red, green, blue); padding-left: 12px; padding-top: 5px; padding-bottom: 5px; border-radius: 10px 0 0 10px;">vol</span><span style="background: radial-gradient(red, green, blue); padding-right: 12px; padding-top: 5px; padding-bottom: 5px; border-radius: 0 10px 10px 0;">tar</span></a></h2>
+
+        <div id="box">
+            <h2>Box1</h2>
+        </div>
+
+        <div id="box2">
+            <h2>Box2</h2>
+        </div>
+
+    </body>
+</html>

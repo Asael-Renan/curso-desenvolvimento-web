@@ -1,0 +1,86 @@
+body, html {
+    font: 16px "Lato", sans-serife;
+    margin: 0px;
+    height: 100%;
+    color: #777;
+}
+
+#voltar {
+    padding: 5px 10px;
+    margin-left: 15px;
+    background-color: rgb(47, 46, 46);
+    float: left;
+    border-radius: 15px;
+}
+
+#voltar:hover {
+    background-color: rgb(124, 121, 121);
+}
+
+
+#voltar a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo {
+    color: #777;
+    text-align: justify;
+    padding: 50px 80px;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #111;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* parallax */
+
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.caixa1 {
+    background-image: url(../imagens/imagem1.jpg);
+    opacity: 0.8;
+}
+
+.caixa2 {
+    background-image: url(../imagens/imagem2.jpg);
+}
+
+.caixa3 {
+    background-image: url(../imagens/imagem3.jpg);
+}
+
+
+.caixa4 {
+    background-image: url(../imagens/imagem4.jpg);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+    color: #fff;
+    background-color: #111 ;
+    padding: 18px;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 5px;
+}

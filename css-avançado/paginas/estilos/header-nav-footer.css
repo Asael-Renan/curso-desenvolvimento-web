@@ -1,0 +1,14 @@
+#conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    background: white;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

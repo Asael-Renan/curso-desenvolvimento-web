@@ -1,0 +1,22 @@
+table {
+    width: 720px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 7px;
+}
+
+th {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+tr.alternado {
+    background-color: #e6e4e4;
+}
+
+tr:hover{
+    background-color: aquamarine;
+}
