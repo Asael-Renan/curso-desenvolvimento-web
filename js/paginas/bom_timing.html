@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <style>
+
+    input {
+        width: 50%;
+        border-radius: 5px;
+        height: 30px;
+        padding-left: 5px;
+        font-size: large;
+    }
+
+    .certo {
+        border: 2px solid green;
+    }
+
+    .errado {
+        border: 2px solid red;
+    }
+
+    .errado::placeholder {
+        color: red;
+        opacity: 1;
+    }
+
+    button {
+        width: 20%;
+        height: 37px;
+        border-radius: 10px;
+    }
+
+    #container {
+        padding: 10% 30%;
+    }
+
+
+  </style>
+
+  <script>
+    var valorNumerico
+
+    function formulario() {
+        var caixaTexto = document.getElementById('caixaTexto')
+        caixaTexto.value.trim()
+
+        //verifica se e um numero
+        if (isNaN(caixaTexto.value)) {
+            caixaTexto.placeholder = 'digite somente numeros'
+            caixaTexto.className = 'errado'
+            caixaTexto.value = ''
+
+        } else if (caixaTexto.value === '') {
+            caixaTexto.placeholder = 'Informe um numero inteiro'
+            
+        } else {
+            caixaTexto.placeholder = 'ok'
+            caixaTexto.className = 'certo'
+            return valorNumerico = caixaTexto.value
+        }
+        
+    }
+
+    function atribuir() {
+        document.getElementById('contador').innerHTML = valorNumerico
+    }
+
+    function iniciarTime() {
+        setInterval(function() {
+            document.getElementById('contador').innerHTML = valorNumerico
+            --valorNumerico
+            if (valorNumerico === -1) {
+            window.location.reload()
+        }
+        }, 1000)
+        
+    }
+    
+  </script>
+
+</head>
+
+<body style="background-color: rgb(191, 188, 188);">
+    <a href="../js.html"><h2>voltar</h2></a>
+    <hr>
+
+    <input onblur="formulario()" type="text" id="caixaTexto" placeholder="informe um numero inteiro">
+
+    <button onclick="atribuir()" id="botao">atribuir tempo</button>
+    <button onclick="iniciarTime()" id="botao">Iniciar time</button>
+    <div id="container">
+        <div style="text-align: center; border: 3px solid black;">
+
+            <h2 id="começando">Contador</h2>
+
+            <h1 id="contador">0</h1>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

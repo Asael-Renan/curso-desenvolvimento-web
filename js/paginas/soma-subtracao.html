@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Manipulando strings</title>
+
+        <script>
+
+            var num1 = prompt('digite um numero:')
+            var num2 = prompt('digite outro numero:')
+            var operacao = prompt('digite "somar" ou "subtrair":')
+        
+            function calculo_soma_subtracao (num1, num2, operacao) {
+                
+                num1 = parseInt(num1)
+                num2 = parseInt(num2)
+
+                var resultado = 0
+
+                if (operacao == 'somar') {
+                    resultado = num1 + num2
+
+                } else if (operacao == 'subtrair') {
+                    resultado = num1 - num2
+
+                } else {
+                    resultado ='Erro'
+                }
+
+                return resultado
+            }
+            
+            var resultado = calculo_soma_subtracao(num1, num2, operacao)
+
+            document.write(resultado)
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+    </body>
+</html>

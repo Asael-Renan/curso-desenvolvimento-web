@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Mudando unput</title>
+
+        <script>
+            function verificarDados() {
+                var dados = document.getElementById('input').value
+
+                document.getElementById('input').value = ''
+
+                if (dados.length < 3) {
+                    document.getElementById('input').style.backgroundColor = 'red'
+                } 
+                
+                else {
+                    document.getElementById('input').style.backgroundColor = 'green'
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+        
+        <input type="text" placeholder="Digite algo" id="input" onfocus="document.getElementById('input').style.backgroundColor = 'yellow'" onfocusout="verificarDados()">
+
+        <h2><a href="../js.html">Voltar</a></h2>
+
+    </body>
+</html>

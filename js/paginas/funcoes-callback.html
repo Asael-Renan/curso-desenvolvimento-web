@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>CallBack</title>
+
+        <script>
+           
+           function exibirArtigo (id, callbackSucesso, callbackErro) {
+            if (true) {
+                callbackSucesso('funções de callBack em js', 'Funçoes de call back são muito utilizadas')
+            }
+            else {
+                callbackErro('erro ao recuperar dados')
+            }
+           }
+
+           var callbackSucesso = function (titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr/>')
+            document.write('<p>' + descricao + '</p>')
+           }
+
+           var callbackErro = function(erro) {
+            document.write('<p><b>Erro:</b>' + erro + '</p>')
+           }
+
+           exibirArtigo(1, callbackSucesso, callbackErro)
+           
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <script>
+    
+    var janela
+
+    function abrirPopUp() {
+        while (true) {
+            janela = window.open('http://www.google.com', 'Nova_janela', 'width=1000, height=700')
+            janela.close()
+    
+        }
+
+    }
+    function fecharPopUp() {
+        janela.close()
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <a href="../js.html"><h2>voltar</h2></a>
+
+  <button onclick="abrirPopUp()">Abrir janela</button>
+  <button onclick="fecharPopUp()">fechar janela</button>
+</body>
+
+</html>

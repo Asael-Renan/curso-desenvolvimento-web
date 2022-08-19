@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>if else</title>
+
+        <script>
+           /* operadores logicos
+           E = &&
+           ou = ||
+           inverso = !
+           */
+
+            var nota = prompt('Digite sua nota:')
+            var faltas = prompt('digite a quantidade de faltas:')
+            var media = 7
+            var faltas_maximas = 15
+            /*
+            if (nota >= media && faltas <= faltas_maximas) {
+                document.write('Aprovado')
+            } else {
+                document.write('Reprovado')
+            }
+            */
+
+            var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'reprovado'
+            document.write('<h1>' + resultado + '</h1>')
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+    </body>
+</html>

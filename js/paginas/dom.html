@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Manipulando strings</title>
+
+        <script>
+
+            function distribuirCaracter() {
+
+                var caracter = document.getElementById('entrada').value
+
+                document.getElementById('entrada').value = ''
+
+                caracter.trim()
+                
+                switch (caracter) {
+                    case '0':
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                        document.getElementById('apenasNumeros').value += caracter
+                        break;
+                    default:
+                        document.getElementById('apenasLetras').value += caracter
+                        break;
+                }
+
+            }
+
+
+            function mudarCor(cor) {
+                document.getElementById('bloco').style.backgroundColor = cor
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <input type="text" onkeyup="distribuirCaracter()" id="entrada" placeholder="teste">
+        <hr>
+
+        <span>Texto:</span>
+        <input type="text" disabled="disabled" id="apenasLetras">
+        <span>Numero:</span>
+        <input type="text" disabled="disabled" id="apenasNumeros">
+
+        <hr>
+
+        <button style="background-color: blue; color: white;" id="azul" onclick="mudarCor('blue')">Azul</button>
+        <button style="background-color: green; color: white;" id="verde" onclick="mudarCor('green')">Verde</button>
+        <button style="background-color: red; color: white;" id="vermelho" onclick="mudarCor('red')">vermelho</button>
+
+        <div style="width: 200px; height: 200px; background-color: gray; margin-top: 30px; border: 5px solid black;" id="bloco"></div>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+
+    </body>
+</html>

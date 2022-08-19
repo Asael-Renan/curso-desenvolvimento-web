@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>calculo imc</title>
+
+        <script>
+           
+           var nome = prompt('Informe seu nome:')
+           var altura = prompt('Informe sua altura em "cm"')
+           var peso = prompt('Informe seu peso')
+           var resultado = null
+
+            altura =parseInt(altura)
+            peso = parseFloat(peso)
+
+            altura = altura / 100//centimetros para metros
+            var imc = peso / (altura * altura)//calculo imc
+
+            if (imc < 16) {
+                resultado = 'Baixo peso muito grave'
+
+            } else if (imc >= 16 && imc < 17) {
+                resultado = 'Baixo peso grave'
+
+            } else if (imc >= 17 && imc <= 18.49) {
+                resultado = 'Baixo peso'
+
+            } else if (imc >= 18.50 && imc <= 24.99) {
+                resultado = ' Peso normal'
+
+            } else if (imc >= 25 && imc <= 29.99) {
+                resultado = 'Sobrepeso'
+
+            } else if (imc >= 30 && imc <= 34.99) {
+                resultado = 'Obesidade grau I'
+
+            } else if (imc >= 35 && imc <= 39.99) {
+                resultado = 'Obesidade grau II'
+
+            } else if (imc >= 40) {
+                resultado = 'Obesidade grau III'
+
+            }
+
+            document.write('<h1>' + nome + ' possui índice de massa corporal igual a ' + imc + ', sendo classificado como: ' + resultado + '</h1>')
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+    </body>
+</html>

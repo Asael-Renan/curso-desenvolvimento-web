@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <a href="../../js.html"><h2>Voltar</h2></a>
+
+        <input id="caixaTexto" type="text" placeholder="Cadeira">
+
+        <button onclick="adicionar()">adicionar</button>
+        <button onclick="ordenar()">ordenar</button>
+
+        <script>
+
+            var objetos = Array('cadeira', 'impressora', 'garfo')
+
+            function adicionar() {
+
+                var valor = document.getElementById('caixaTexto').value
+
+                if (valor === '') {
+                    alert('informe um valor válido')
+
+                } else {
+
+                    //limpar caixa de texto
+                    document.getElementById('caixaTexto').value = ''
+
+                    if (objetos.indexOf(valor) !== -1) {
+                        alert('Objeto já foi adicionado')
+
+                    } else {
+                        objetos.push(valor)
+                    }
+                }
+            }
+
+            function ordenar () {
+                objetos.sort()
+                console.log(objetos)
+            }
+            
+        </script>
+
+    </body>
+</html>

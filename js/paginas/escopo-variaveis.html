@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>if else</title>
+
+        <script>
+           
+            //3 escopos: global, função e bloco
+
+            if (true) {
+                //bloco
+                var serie = 'Friends'
+            }
+
+            //global
+            var serie2 = 'Game of Thrones'
+
+            document.write(serie + '<br>')
+
+            function x () {
+                //função
+                document.write(serie + '<br>')
+                document.write(serie2 + '<br>')
+                var serie3 = 'Doctor who'
+            }
+            x()
+            document.write(serie3)
+            
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1><a href="../js.html">Voltar</a></h1>
+
+    </body>
+</html>
